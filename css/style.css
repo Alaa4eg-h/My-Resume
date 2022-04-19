@@ -279,7 +279,16 @@ img {
     text-align: center;
     padding: 2rem;
     box-shadow: var(--box-shadow);
-    flex: 1 1 22rem;
+    border: 0.1rem solid var(--light-color);
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    border-radius: 1rem;
+    flex: 1 1 calc(100% / 4 - 1.5rem);
+    transition: var(--transition);
+}
+
+.facts .box-container .box:hover {
+    transform: translateY(-1rem);
 }
 
 .facts .box-container .box i {
@@ -295,6 +304,10 @@ img {
     margin-bottom: 1.5rem;
 }
 
+.facts .box-container .box p {
+    padding: 1rem 0;
+}
+
 .facts .box-container .box .number {
     font-size: 2.6rem;
     font-weight: 700;
@@ -302,8 +315,79 @@ img {
     padding: 1rem 0;
 }
 
-
 /*End Facts*/
+/*Start Progress*/
+.skills .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1.5rem;
+}
+
+.skills .box-container .box {
+    padding: 1rem 0;
+    flex: 1 1 40rem;
+}
+
+.skills .box-container .box .skill-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.skills .box-container .box .progress-bar-wrap {
+    width: 100%;
+    height: 1rem;
+    background: var(--light-color);
+    margin-bottom: 1rem;
+}
+
+.skills .box-container .box .progress-bar {
+    background: var(--primary-color);
+}
+
+.skills .box-container .box .bar-1 {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.skills .box-container .box .bar-2 {
+    width: 90%;
+    height: 100%;
+    display: block;
+}
+
+.skills .box-container .box .bar-3 {
+    width: 80%;
+    height: 100%;
+    display: block;
+}
+
+.skills .box-container .box .bar-4 {
+    width: 85%;
+    height: 100%;
+    display: block;
+}
+
+.skills .box-container .box .bar-5 {
+    width: 70%;
+    height: 100%;
+    display: block;
+}
+
+.skills .box-container .box .bar-6 {
+    width: 75%;
+    height: 100%;
+    display: block;
+}
+
+/*End Progress*/
 
 
 /*Start Media*/
