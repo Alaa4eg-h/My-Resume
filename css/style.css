@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #0563bb;
+    --sceondry-color: #49A0F2;
+    --dark-color: #50515B;
+    --dark-color-alt: #2c2d33;
+    --light-color: #e3e4e6;
+    --white-color: #FFF;
+    --black-color: #000;
+    --transition: all 0.3s ease;
+    --box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+* {
+    font-family: "Raleway", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    color: var(--dark-color);
+}
+
+section {
+    padding: 8rem 10%;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.heading {
+    text-align: center;
+    padding: 2rem 6rem;
+    margin-bottom: 3rem;
+}
+
+.heading h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--dark-color);
+}
+
+.heading .underline {
+    width: 20rem;
+    height: 0.2rem;
+    background: var(--light-color);
+    margin: 1.5rem auto 1.5rem auto;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.heading .underline:before {
+    content: "";
+    position: absolute;
+    top: -0.1rem;
+    left: 50%;
+    width: 4rem;
+    height: 0.5rem;
+    transform: translateX(-50%);
+    background: var(--primary-color);
+
+}
+
+/*Start Header*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    transition: var(--transition);
+}
+
+.header.active {
+    left: 0;
+}
+
+.header .menu-bar {
+    font-size: 2rem;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    display: none;
+}
+
+
+.header nav {
+    width: 100%;
+}
+
+.header nav .nav_item {
+    margin-bottom: 1.5rem;
+}
+
+.header nav .nav_link {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.2rem;
+    background: var(--light-color);
+    color: var(--dark-color);
+    transition: var(--transition);
+    overflow: hidden;
+    height: 5rem;
+    width: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    border-radius: 5rem;
+}
+
+.header nav .nav_link.active {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.header nav .nav_link i {
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.header nav .nav_link span {
+    margin-left: 1rem;
+    display: none;
+}
+
+.header nav .nav_link:hover span {
+    display: initial;
+}
+
+.header nav .nav_link:hover {
+    width: 100%;
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+
+/*End Header*/
+
+/*Start Home*/
+.home {
+    min-height: 100vh;
+    background: url("../images/hero-bg.jpg") no-repeat right;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: -1;
+}
+
+.home .content {
+    width: 85%;
+    margin-left: auto;
+    margin-top: -10rem;
+}
+
+.home .content h1 {
+    font-size: 6.5rem;
+    color: var(--dark-color);
+    line-height: 7.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    padding: 1rem 0;
+}
+
+.home .content p {
+    font-size: 3.2rem;
+    line-height: 4.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.home .content p span {
+    color: var(--primary-color);
+}
+
+.home .social a {
+    font-size: 2rem;
+    color: var(--dark-color);
+    display: inline-block;
+    padding: 1rem 0;
+    margin-right: 2rem;
+    transition: var(--transition);
+}
+
+.home .social a:hover {
+    color: var(--primary-color);
+}
+
+/*End Home*/
+
+
+/*Start About*/
+.about p {
+    line-height: 2.4rem;
+}
+
+.about .box-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.about .about-img {
+    flex: 1 1 40rem;
+}
+
+.about .about-content {
+    flex: 1 1 55rem;
+}
+
+.about .about-content .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.about .about-content p {
+    margin-bottom: 2rem;
+}
+
+.about .about-content .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.about .about-data i {
+    color: var(--primary-color);
+}
+
+.about .about-data strong {
+    color: var(--dark-color-alt);
+}
+
+/*End About*/
+/*Start Facts*/
+.facts .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.facts .box-container .box {
+    text-align: center;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    flex: 1 1 22rem;
+}
+
+.facts .box-container .box i {
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    background: var(--primary-color);
+    color: var(--white-color);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.facts .box-container .box .number {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--dark-color-alt);
+    padding: 1rem 0;
+}
+
+
+/*End Facts*/
+
+
+/*Start Media*/
+@media screen and (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        width: 30rem;
+        background: var(--white-color);
+        box-shadow: var(--box-shadow);
+        left: -100%;
+    }
+
+    .header .menu-bar {
+        display: initial;
+    }
+
+    .header .menu-bar {
+        transform: rotate(180deg);
+    }
+
+    .header nav .nav_link {
+        width: 100%;
+    }
+
+    .header nav .nav_link span {
+        display: initial;
+    }
+
+    .home .content {
+        text-align: center;
+        width: 100%;
+        margin-top: -5rem;
+    }
+}
+
+/*End Media*/
