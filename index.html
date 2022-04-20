@@ -7,6 +7,7 @@
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
           integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
           referrerpolicy="no-referrer" rel="stylesheet"/>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>My Resume</title>
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -18,34 +19,34 @@
     <nav>
         <ul class="nav_list">
             <li class="nav_item">
-                <a class="nav_link active" href="#">
+                <a class="nav_link active" href="#home">
                     <i class="fas fa-house-user fa-fw"></i>
                     <span>Home</span>
                 </a>
             </li>
             <li class="nav_item">
-                <a class="nav_link" href="#">
+                <a class="nav_link" href="#about">
                     <i class="fa fa-user fa-fw"></i>
                     <span>About</span>
                 </a>
             </li>
             <li class="nav_item">
-                <a class="nav_link" href="#">
+                <a class="nav_link" href="#resume">
                     <i class="fas fa-file fa-fw"></i>
                     <span>Resume</span></a>
             </li>
             <li class="nav_item">
-                <a class="nav_link" href="#">
-                    <i class="fas fa-pager fa-fw"></i>
-                    <span>Portfolio</span></a>
-            </li>
-            <li class="nav_item">
-                <a class="nav_link" href="#">
+                <a class="nav_link" href="#services">
                     <i class="fas fa-server fa-fw"></i>
                     <span>Services</span></a>
             </li>
             <li class="nav_item">
-                <a class="nav_link" href="#">
+                <a class="nav_link" href="#portfolio">
+                    <i class="fas fa-pager fa-fw"></i>
+                    <span>Portfolio</span></a>
+            </li>
+            <li class="nav_item">
+                <a class="nav_link" href="#contact">
                     <i class="fas fa-address-book fa-fw"></i>
                     <span>Contact</span></a>
             </li>
@@ -201,7 +202,117 @@
     </div>
 </section>
 <!--@Skills Section-->
-
+<!--Services Section-->
+<section class="services" id="services">
+    <div class="heading">
+        <h2 class="title">Services</h2>
+        <div class="underline"></div>
+        <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid atque blanditiis, cum
+            debitis dolore modi neque nesciunt nobis <br>non nulla numquam pariatur quae rem repellendus sequi totam,
+            vero
+            voluptatum!</p>
+    </div>
+    <div class="box-container">
+        <div class="box">
+            <div class="icon">
+                <i class='bx bxl-dribbble icon-1'></i>
+            </div>
+            <h4 class="title">Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        </div>
+        <div class="box">
+            <div class="icon">
+                <i class='bx bx-file icon-2'></i>
+            </div>
+            <h4 class="title">Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        </div>
+        <div class="box">
+            <div class="icon">
+                <i class='bx bx-tachometer icon-3'></i>
+            </div>
+            <h4 class="title">Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        </div>
+        <div class="box">
+            <div class="icon">
+                <i class='bx bx-layer icon-4'></i>
+            </div>
+            <h4 class="title">Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        </div>
+        <div class="box">
+            <div class="icon">
+                <i class='bx bx-slideshow icon-5'></i>
+            </div>
+            <h4 class="title">Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        </div>
+        <div class="box">
+            <div class="icon">
+                <i class='bx bx-arch icon-6'></i>
+            </div>
+            <h4 class="title">Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        </div>
+    </div>
+</section>
+<!--@Services Section-->
+<!--Portfolio Section-->
+<section class="portfolio" id="portfolio">
+    <div class="heading">
+        <h2 class="title">Portfolio</h2>
+        <div class="underline"></div>
+        <p class="sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid atque blanditiis, cum
+            debitis dolore modi neque nesciunt nobis <br>non nulla numquam pariatur quae rem repellendus sequi totam,
+            vero
+            voluptatum!</p>
+    </div>
+    <ul class="portfolio_control">
+        <li>
+            <a data-filter="All" href="#">All</a>
+        </li>
+        <li>
+            <a data-filter="App" href="#">App</a>
+        </li>
+        <li>
+            <a data-filter="Card" href="#">Card</a>
+        </li>
+        <li>
+            <a data-filter="Web" href="#">Web</a>
+        </li>
+    </ul>
+    <div class="portfolio-box">
+        <div class="box">
+            <img alt="" src="images/portfolio/portfolio-1.jpg">
+        </div>
+        <div class="box">
+            <img alt="" src="images/portfolio/portfolio-2.jpg">
+        </div>
+        <div class="box">
+            <img alt="" src="images/portfolio/portfolio-3.jpg">
+        </div>
+        <div class="box span-2">
+            <img alt="" src="images/portfolio/portfolio-6.jpg">
+        </div>
+        <div class="box">
+            <img alt="" src="images/portfolio/portfolio-5.jpg">
+        </div>
+        <div class="box">
+            <img alt="" src="images/portfolio/portfolio-6.jpg">
+        </div>
+        <div class="box">
+            <img alt="" src="images/portfolio/portfolio-7.jpg">
+        </div>
+        <div class="box">
+            <img alt="" src="images/portfolio/portfolio-8.jpg">
+        </div>
+        <div class="box">
+            <img alt="" src="images/portfolio/portfolio-9.jpg">
+        </div>
+    </div>
+</section>
+<!--@Portfolio Section-->
 
 <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
